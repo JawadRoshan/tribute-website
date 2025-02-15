@@ -1,0 +1,232 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(67, 67, 67));
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+h1 {
+    font-size: 80px;
+    font-family: Impact;
+    display: flex;
+    font-weight: lighter;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.name-part {
+    position: relative;
+    z-index: 2; 
+    font-size: 208px;
+    margin-top: 95px;
+    transition: 0.3s;
+    display: flex;
+    
+}
+
+.name-part:hover{
+    font-size: 225px;
+    /*text-shadow: 0px 0px 18px gold;*/
+    
+}
+
+.ali-overlay {
+    width: 420px; 
+    margin-top: 48px;
+    position: absolute;
+    z-index: 10; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    transition: 0.5s;
+    display: flex;
+}
+
+.ali-overlay:hover{
+    width: 470px;
+    filter: drop-shadow(0px 0px 22px #ffd015);
+    cursor: pointer;
+
+}
+
+p {
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 10px;
+    color:gold;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+nav ul li {
+    margin: 0 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: gold;
+}
+
+
+.fights-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+
+.fight-card {
+    width: 300px;
+    background: whitesmoke;
+    color: black;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(255, 215, 0, 0.5);
+    transition: 0.3s;
+    position: relative;
+}
+
+
+.fight-card:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 25px rgba(255, 215, 0, 0.8);
+    cursor: pointer;
+}
+
+
+.fight-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.fight-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.fight-link:hover {
+    color: gold;
+}
+
+
+.activism-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.achievements-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.achievement-card {
+    width: 400px; 
+    background: white;
+    color: black;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 5px 5px 15px rgba(255, 215, 0, 0.5);
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.achievement-card:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 25px rgba(255, 215, 0, 0.8);
+}
+
+.achievement-card h2 {
+    text-align: center;
+    color: gold;
+    font-size: 20px;
+}
+
+.achievement-card ul {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.achievement-card p {
+    font-size: 16px;
+}
+
+
+.walk-of-fame-card {
+    height: 450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(255, 215, 0, 0.5);
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    .ali-overlay {
+        width: 180px;
+    }
+
+    .fight-card {
+        width: 90%;
+    }
+}
